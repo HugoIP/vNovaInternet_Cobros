@@ -1,0 +1,82 @@
+@charset "utf-8";
+/* CSS Document */
+/* servicios */
+body {
+	font-size:12px;
+	font: 12px/1.5em Verdana, Geneva, Arial, Helvetica, sans-serif; min-width: 960px;
+	color: #333;
+	text-align: center;
+}
+h2{
+	background-color: #8dc63f;
+	color: #ffffff;
+	padding: 4px;
+	font-size:18px;
+}
+h3{
+	color: #6d6e71;
+	font-size:20px;
+	text-align:left;
+}
+h5{
+	color: #808285;
+	font-size: 14px;
+	text-align:left;
+	/*Subtitulos*/
+}
+
+#cuerpo{
+	width:100%;
+	background:white;
+}
+#ccontent{
+	height:auto;
+	min-height: 100%;
+	margin:auto;
+	width:960px;
+	text-align:center;
+}
+#ccontent p{
+	padding: 8px 5px 8px 5px;
+	text-align:left;
+}
+/* //// servicios */
+.dataInternetPlan{
+	
+}
+.userData{
+	float: left;
+	padding: 10px;
+	width: 290px;
+}
+.plan{
+	float: left;
+	padding: 10px;
+	width: 290px;
+}
+.facturacion{
+	float: left;
+	padding: 10px;
+	width: 290px;
+}
+.foto{
+	border: solid 1px;
+	height:80px;
+	margin: 10px 0 0 10px;
+	width: 60px;
+}
+.userName{
+	color: #000000;
+	font-size: 18px;
+	font-weight: bold;
+}
+.dataCurrent{
+	color: #000000;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 0 0 20px 0;
+	text-align:center;
+}
+.cf {
+	zoom: 2;
+}

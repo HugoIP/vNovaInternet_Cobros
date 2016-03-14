@@ -1,0 +1,448 @@
+body{
+	margin: auto;
+	font-size: 12px;
+	background: white;
+	background:url(../imagenes/rayitas.png);
+}
+#content{
+	font-family: arial,sans-serif;
+	margin: auto;
+	width: 960px;
+	background: white;
+}
+#formLogInClient{
+	width:300px;
+	background-color: #8DC63F !important;
+	font-size: 1.2em;
+	font-weight: bold;
+	color: white;
+	padding: 20px;
+	margin: auto;
+	box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.2);
+	border-radius: 25px;
+}
+#formLogIn{
+	
+}
+#formLogIn input[type=text],
+#formLogIn input[type=password],
+#formLogIn input[type=submit], 
+#formLogOut input[type=submit] {
+    line-height: 14px;
+    margin: 10px 0;
+    padding: 6px 35px;
+    border: 0;
+    outline: none;
+ 
+    font-family: Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-shadow: 0px 1px 1px rgba(255,255,255, .2);
+ 
+    -webkit-border-radius: 26px;
+    -moz-border-radius: 26px;
+    border-radius: 26px;
+ 
+    -webkit-transition: all .15s ease-in-out;
+    -moz-transition: all .15s ease-in-out;
+    -o-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+}
+#formLogIn input[type=submit]{
+	margin-left: 40%;
+}
+#formInit{
+	margin-left: 30%
+	float:right;
+	width:350px;	
+}
+.errorLogIn{
+	color: red;
+	font-size: 0.6em;
+}
+
+#formLogIn input[type=text],
+#formLogIn input[type=password]
+{
+	margin-left: 20%;
+    color: #686868;
+    width: 170px;
+ 
+    -webkit-box-shadow: inset 1px 1px 1px 0px rgba(255,255,255, .6);
+    -moz-box-shadow: inset 1px 1px 1px 0px rgba(255,255,255, .6);
+    box-shadow: inset 1px 1px 1px 0px rgba(255,255,255, .6);
+ 
+    background: #ffffff;
+    background: -moz-linear-gradient(top,  #ffffff 0%, #ccc 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ccc));
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#ccc 100%);
+    background: -o-linear-gradient(top,  #ffffff 0%,#ccc 100%);
+    background: -ms-linear-gradient(top,  #ffffff 0%,#ccc 100%);
+    background: linear-gradient(top,  #ffffff 0%,#ccc 100%);
+}
+
+#checkB{
+	display: block;
+	font-size: 0.6em;
+	font-weight: bold;
+}
+.servicio{
+	box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.2);
+	border-radius: 25px;
+	width: 30%;
+	/*margin: 15px;*/
+	padding: 20px;
+	min-height: 150px;
+	text-align: center;	
+	float: left;
+	margin: 10px;
+}
+.imgServ{
+	border-radius: 25px;
+}
+.infoServ{
+	text-align: left;
+}
+.boxDay{
+	width: 2.5%;
+	max-height: 10px;
+	float: left;
+	border: 1px solid #DDD;
+}
+#qos{
+	max-height: 10px;
+}
+.good{
+	background-color: #8DC63F;
+	max-height: 10px;
+}
+.reg{
+	background-color: orange;
+	max-height: 10px;
+}
+.bad{
+	background-color: red;
+	max-height: 10px;
+}
+
+.linkPopUp{
+	border: 1px solid #DDD;
+	font-size: 1.2em;
+}
+.pagarB{
+	text-align: right;
+	float: right;
+	border: 1px solid #DDD;
+}
+
+#detallesEmpresa{
+	width: 100%;
+	margin-top: 10px;
+	height: 150px;
+}
+#logoEncabezado{
+	width: 20%;
+	float: left;
+}
+#empresa{
+	width: 58%;
+	float: left;
+}
+#factura{
+	width: 19%;
+	float: left;
+	border: solid 2px black;
+}
+#factura h2{
+	text-align: center;
+	border:solid 1px black;
+}
+#factura #serie{
+	width:40%;
+	text-align: right;
+	float:left;
+	font-size: 16px;
+	font-weight: bold;
+}
+#factura #folio{
+	width:55%;
+	text-align: left;
+	float:right;
+	font-size: 16px;
+	font-weight: bold;
+	color:red;
+}
+#fecha{
+	width: 80%;
+	font-size: 0.8em;
+	color: #000000;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 40%;
+	clear:both;
+}
+
+.lab{
+	color: #888888;
+	font-size: 0.9em;
+	font-weight: bold;
+	padding-left: 25px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+h1{
+	font-size: 1.3em;
+	color: #000000;
+	padding-top: 20px;
+}
+h2{
+	font-size: 1.5em;
+	color: #000000;
+	padding-left: 10px;
+}
+
+#cliente{
+	width: 98%;
+	-webkit-border-radius: 10px;
+	-webkit-border-bottom-right-radius: 0;
+	-moz-border-radius: 10px;
+	-moz-border-radius-bottomright: 0;
+	border-radius: 10px;
+	border-bottom-right-radius: 0;
+	border: solid 1px black;
+	display: block;
+}
+#domic{
+	color: #000000;
+	font-weight: bold;
+	padding-left: 10px;
+}
+#venta{
+	margin-top:5px;
+	width: 98%;
+	height: 400px;
+	-webkit-border-top-right-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-radius-topright: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border: solid 1px black;
+	margin-bottom: 10px;
+	text-align: center;
+}
+#cbb{
+	margin:2px;
+	width:60%;
+	float:left;
+}
+#totales{
+	clear:both;
+}
+#totales #sub-totales{
+	width: 30%;
+	float:left;
+}
+#totales #subtotal{
+	text-align: right;
+}
+#totales #iva{
+	text-align: right;
+}
+#totales #total{
+	text-align: right;
+}
+#cant{
+	border-right: solid 1px black;
+	float:left;
+	height: 400px;
+	width:10%;
+}
+#umed{
+	border-right: solid 1px black;
+	float:left;
+	height: 400px;
+	width:10%;
+}
+#desc{
+	border-right: solid 1px black;
+	float:left;
+	height: 400px;
+	width:60%;
+}
+#puni{
+	border-right: solid 1px black;
+	float:left;
+	height: 400px;
+	width:10%;
+}
+#impo{
+	float:left;
+	height: 400px;
+	width:9%;
+}
+.label{
+	border-bottom: solid 1px black;
+}
+.col{
+	height:100%;
+}
+.numap{
+	font-weight: bold;
+}
+#leyendas{
+	text-align: center;
+	clear:both;
+}
+#exhpago{
+	text-align: center;
+	clear:both;
+	width:100%;
+}
+#naprovacion{
+	clear:both;
+	width:100%;
+}
+#linkUrl{
+	font-size: 1.2em;
+	color: #333;
+}
+.lineSeparator{
+	clear: both;
+	max-height: 2px;
+	/*background-color: #666;*/
+	border-bottom: 2px solid #BCBEC0;
+	margin: 5px 0 20px 0;
+}
+.lineBlank{
+	clear: both;
+	min-height: 5em;
+}
+.textVertical{
+	font-size: 0.9em;
+	color: #333;
+	display:block;
+	white-space:nowrap;
+	-webkit-transform-origin:25px 10px; /* ESTE VALOR SE CALCULA: A/2 */
+	-webkit-transform: rotate(-90deg);
+	-moz-transform-origin:25px 10px; /* ESTE VALOR SE CALCULA: A/2 */
+	-moz-transform: rotate(-90deg);
+	-ms-transform-origin:25px 10px; /* ESTE VALOR SE CALCULA: A/2 */
+	-ms-transform: rotate(-90deg);
+	-o-transform-origin:25px 10px; /* ESTE VALOR SE CALCULA: A/2 */
+	-o-transform: rotate(-90deg);
+	transform-origin:25px 10px; /* ESTE VALOR SE CALCULA: A/2 */
+	transform: rotate(-90deg);
+	/*position:absolute;*/
+	bottom:20px; /* ESTE VALOR SE CALCULA: A/2 -5 */
+	left:0;
+	line-height:20px;
+	margin-left: 80%;
+}
+
+#printButton {
+	width: 220px;
+	height: 30px;
+	margin: auto;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 1.8em;
+	background-color: #A2E2Fd !important;
+	text-align: center; 
+	margin-top: 40px;
+	padding: 5px 0 5px 0;
+
+	vertical-align: middle;
+	text-align: center;
+
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+
+	-webkit-box-shadow: inset 1px 1px 1px 0px rgba(255,255,255, .6);
+    -moz-box-shadow: inset 1px 1px 1px 0px rgba(255,255,255, .6);
+    box-shadow: inset 1px 1px 1px 0px rgba(255,255,255, .6);
+}
+#printButton:hover{
+	width: 220px;
+	height: 30px;
+	margin: auto;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 1.8em;
+	background-color: #62d2ed !important;
+	text-align: center; 
+	margin-top: 40px;
+	padding: 5px 0 5px 0;
+
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+
+	-webkit-box-shadow: inset 1px 1px 1px 0px rgba(255,255,255, .6);
+    -moz-box-shadow: inset 1px 1px 1px 0px rgba(255,255,255, .6);
+    box-shadow: inset 1px 1px 1px 0px rgba(255,255,255, .6);
+}
+#printButton a:link,a:visited,a:hover,a:active{
+	color:white;
+	text-decoration: none; 
+}
+#printBannerBn{
+	visibility: hidden;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+}
+#printBannerBn img{
+	visibility: hidden;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+}
+#printBannerCo{
+	/*background-image: url('img/bann.jpg');
+	background-repeat: no-repeat;*/
+	width:960px;
+	min-height: 520px;
+	margin:auto;
+	text-align: center;
+	padding:10px;
+	margin-top: 40px;
+}
+#printBannerCo img{
+	margin:auto;
+}
+
+
+
+
+.iconRecibo{
+	width:30%;
+	min-height: 50px;
+	text-align: left;
+	vertical-align: top;
+	display: inline-block; 
+	padding-left:4px;
+	text-align: center;
+	font-size:0.8em;
+	font-weight: bold;
+	color:#CCCCCC;
+}
+.iconRecibo a{
+	font-size:0.8em;
+	font-weight: bold;
+	color:#FFFFFF;
+	text-decoration: none;
+}
+.iconRecibo .imgIcon{
+	width:100%;
+	min-height: 20px;
+	background-color: #AACC22;
+}
+.iconRecibo .pagoPendiente{
+	width:100%;
+	min-height: 20px;
+	background-color: #FF6666;
+}

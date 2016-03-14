@@ -1,0 +1,218 @@
+"body{
+	margin: auto;
+	font-size: 12px;
+	background: white;
+}
+#content{
+	font-family: arial,sans-serif;
+	margin: auto;
+	width: 960px;
+	height:100%;
+	background: white;
+}
+#detallesEmpresa{
+	width: 100%;
+	margin-top: 10px;
+	height: 150px;
+}
+#logoEncabezado{
+	width: 20%;
+	float: left;
+}
+#empresa{
+	width: 60%;
+	float: left;
+}
+#factura{
+	width: 19%;
+	float: left;
+	border: solid 2px black;
+}
+#factura h2{
+	text-align: center;
+	border:solid 1px black;
+}
+#factura #serie{
+	width:40%;
+	text-align: right;
+	float:left;
+	font-size: 16px;
+	font-weight: bold;
+}
+#factura #folio{
+	width:55%;
+	text-align: left;
+	float:right;
+	font-size: 16px;
+	font-weight: bold;
+	color:red;
+}
+#fecha{
+	width: 80%;
+	font-size: 0.8em;
+	color: #000000;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 40%;
+	clear:both;
+}
+
+.lab{
+	color: #888888;
+	font-size: 0.9em;
+	font-weight: bold;
+	padding-left: 25px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+h1{
+	font-size: 1.3em;
+	color: #000000;
+	padding-top: 20px;
+}
+h2{
+	font-size: 1.5em;
+	color: #000000;
+	padding-left: 10px;
+}
+
+#cliente{
+	width: 90%;
+	-webkit-border-radius: 10px;
+	-webkit-border-bottom-right-radius: 0;
+	-moz-border-radius: 10px;
+	-moz-border-radius-bottomright: 0;
+	border-radius: 10px;
+	border-bottom-right-radius: 0;
+	border: solid 1px black;
+	clear:both;
+}
+#domic{
+	color: #000000;
+	font-weight: bold;
+	padding-left: 10px;
+}
+#service{
+	width: 25%;
+	float: left;
+	display: block;
+}
+#payment{
+	width: 33%;
+	float: left;
+	display: block;
+}
+.titl{
+	width: 90%;
+	margin: auto;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 1.2em;
+	background-color: #8DC63F !important;
+	/*background-image: url('img/titl.png');*/
+	background-repeat:repeat;
+	text-align: center; 
+	padding: 5px 0 5px 0;
+}
+.info-txt{
+	width: 80%;
+	font-size: 1em;
+	color: #000000;
+	font-weight: bold;
+	padding-left: 20px;
+}
+#moneda{
+	width: 50%;
+	text-align: center;
+}
+#notice{
+	margin: auto;
+	width: 75%;
+	border: 4px solid #BCBEC0;
+	clear: both;
+	padding: 15px 0 15px 0;
+	margin-top: 30px;
+	font-size: 0.8em;
+	display: block;
+}
+.notice-txt{
+	margin: auto;
+	width: 80%;
+	color: #58595B;
+	font-weight: bold;
+	padding-left: 25px;
+}
+#linkUrl{
+	font-size: 1.2em;
+	color: #333;
+}
+.lineSeparator{
+	clear: both;
+	max-height: 1px;
+	border-bottom: 2px solid #BCBEC0;
+	margin: 5px 0 20px 0;
+}
+.textVertical{
+	font-size: 0.9em;
+	color: #333;
+	display:block;
+	white-space:nowrap;
+	-webkit-transform-origin:25px 10px; /* ESTE VALOR SE CALCULA: A/2 */
+	-webkit-transform: rotate(-90deg);
+	-moz-transform-origin:25px 10px; /* ESTE VALOR SE CALCULA: A/2 */
+	-moz-transform: rotate(-90deg);
+	-ms-transform-origin:25px 10px; /* ESTE VALOR SE CALCULA: A/2 */
+	-ms-transform: rotate(-90deg);
+	-o-transform-origin:25px 10px; /* ESTE VALOR SE CALCULA: A/2 */
+	-o-transform: rotate(-90deg);
+	transform-origin:25px 10px; /* ESTE VALOR SE CALCULA: A/2 */
+	transform: rotate(-90deg);
+	/*position:absolute;*/
+	bottom:20px; /* ESTE VALOR SE CALCULA: A/2 -5 */
+	left:0;
+	line-height:20px;
+	margin-left: 80%;
+}
+#encabezado{
+	visibility: hidden;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+}
+#pie{
+	visibility: hidden;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+}
+#printButton{
+	visibility: hidden;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+}
+#printBannerBn{
+	/*background-image: url('img/bann.jpg');
+	background-repeat: no-repeat;*/
+	width:960px;
+	min-height: 520px;
+	margin:auto;
+	text-align: center;
+	padding:10px;
+	margin-top: 40px;
+}
+#printBannerBn img{
+	margin:auto;
+}
+#printBannerCo{
+	visibility: hidden;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+}
+#printBannerCo img{
+	visibility: hidden;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+}

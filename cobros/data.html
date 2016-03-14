@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>vNova Internet</title>
+	<script src="../js/jquery-1.7.1.js" type="text/javascript"></script>
+	<script src="../js/prefixfree.min.js"  type="text/javascript"></script>
+	<link href="../styles/estilos.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="../styles/cobros.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="../styles/clientsPrint.css" media="print">
+	<script type="text/javascript">
+        $(function () {
+            $('input[type=text]').val("");
+        });
+    </script>
+</head>
+<body>
+	<div id="encabezado">
+		<div id="hcontent">
+	    	<div id="anim">
+	            <div id="cloud1">
+	                <div class="circuloC"></div>
+	                <div class="circuloI"></div>
+	                <div class="circuloD"></div>
+	            </div>
+	            <div id="cloud2">
+	                <div class="circuloC"></div>
+	                <div class="circuloI1"></div>
+	                <div class="circuloD1"></div>
+	            </div>
+	            <div id="cloud3">
+	                <div class="circuloC"></div>
+	                <div class="circuloI"></div>
+	                <div class="circuloD"></div>
+	            </div>
+	        </div>
+	        <div id="helements">
+				<div id="logo"></div>
+				<div id="formInit">
+					<div class="info-txt">Nombre del Cliente</div>
+					<form id="formLogOut" action="" method="post">
+					    <input name="logOut" id="logOut" type="submit" value="Salir" />
+					</form>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div id="cuerpo">
+		<div class="lineBlank">&nbsp;</div>
+		<div id="content">
+			<div id="leftColumn">
+				<ul id="options">
+					<li>
+						Cobros pendientes
+						<ul>
+							<li>Detalles</li>
+						</ul>
+					</li>
+					<li>Registrar cobro</li>
+				</ul>
+			</div>
+			<div id="centerColumn">
+				<table id="tableCobrosPendientes">
+					<thead>
+						<tr>
+							<th>Folio</th>
+							<th>Nombre</th>
+							<th>Cantidad</th>
+							<th>Fecha limite</th>
+							<th>Opciones</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>P012013-01-27U1</td>
+							<td>Hugo Ibañez Perez</td>
+							<td>300</td>
+							<td>28-01-2013</td>
+							<td><p class="link">Detalles</p><p class="link">Cobrar</p></td>
+						</tr>
+						<tr>
+							<td>P012013-01-27U2</td>
+							<td>Monica Luciano Machorro</td>
+							<td>300</td>
+							<td>28-01-2013</td>
+							<td><p class="link">Detalles</p><p class="link">Cobrar</p></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="lineBlank">&nbsp;</div>
+	</div>
+	<div id="pie">
+		<div id="pcontent">
+			<ul>
+	        	<li><a href="#">Responsabilidad social</a></li>
+	        	<li><a href="#">Soporte tecnico</a></li>
+	            <li><a href="#">Tecnologias de la Informaci&oacute;n</a></li>
+	            <li><a href="#">Ventas</a></li>
+	        </ul>
+		</div>
+	</div>
+</body>
+</html>

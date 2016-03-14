@@ -1,0 +1,42 @@
+body{
+	margin: auto;
+	font-size: 12px;
+	background: white;
+	background:url(../imagenes/rayitas.png);
+}
+#content{
+	font-family: arial,sans-serif;
+	margin: auto;
+	width: 960px;
+	background: white;
+}
+
+.cbody{
+	background: #ffffff;
+	background-color: #FFFFFF;
+}
+.artic{
+	border-bottom: 5px;
+}
+.imgs{
+	width:600px;
+	float:left;
+}
+.imgs img{
+	width:190px;
+}
+.detail{
+	width:350px;
+	float:right;
+}
+.desc{
+	font-weight: bold;
+}
+.prec{
+	font-size:2.5em;
+	color:#FF0000;
+}
+.marc{
+	font-size:2.5em;
+	color:#AABBBB;
+}

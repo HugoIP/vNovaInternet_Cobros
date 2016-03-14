@@ -1,0 +1,70 @@
+*{
+	 margin: 0;
+	 padding: 0;
+}
+body{
+	margin: auto;
+	width: 960px;
+	height: 100%;
+}
+.btnCreateFalla{
+	width: 160px;
+	height: 35px;
+	background-color: #66CD00;
+	
+}
+.btnCreateFalla a{
+	font-size: 24px;
+	font-weight: bold;
+	color:#FFFFFF;
+	width: 160px;
+	height: 35px;
+	vertical-align: middle;
+}
+.btnCreateFalla a:link{
+	text-decoration: none;
+}
+.btnCreateFalla a:visited{
+	text-decoration: none;
+}
+.btnCreateFalla a:hover{
+	text-decoration: none;
+}
+.btnCreateFalla a:active{
+	text-decoration: none;
+}
+.historical{
+	width:100%;
+}
+.lastmonth{
+	width:100%;
+	background: #ff0000;
+}
+.day{
+	background: #00FFDD;
+	border-bottom: solid 1px #dddddd;
+	padding: 5px 0 5px 0;
+}
+.day .num{
+	display:inline-block;
+	min-height: 100%;
+	vertical-align: top;
+	width: 18px;
+
+}
+.displayFallas{
+	display:inline-block;
+	width:90%;
+}
+.falla{
+	width: 20%;
+	background: #DDDDDD;
+	border: solid 1px #eeeeee;
+	padding:1px;
+}
+.identify{
+	width: 100%;
+}
+.content{
+	width: 100%;
+}
