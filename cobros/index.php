@@ -1,6 +1,6 @@
 <?php
 //include 'php/sessionManager.php';
-
+/*
 include('../php/conectorBD.php');
 include('../php/DairyCheckDB.php');
 include('php/helper.php'); 	
@@ -317,6 +317,7 @@ function tableDataServiceByClient($cliente,$comand,$connect,$isConected)
 	}
 	return $contentTable;
 }
+*/
 ?>
 
 <!DOCTYPE html>
