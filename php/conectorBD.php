@@ -2,7 +2,7 @@
 function conectar()
 {
 	$dbhost = "127.0.1.1"; // El host
-	$dbuser = "root"; // El usuario
+	$dbuser = "pi"; // El usuario
 	$dbpass = "m0n1ca"; // El Pass
 	$db = "alfonsoe_vnovainternet"; // Nombre de la base
 
