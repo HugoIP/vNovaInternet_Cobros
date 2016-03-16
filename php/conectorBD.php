@@ -1,7 +1,7 @@
 <?php
 function conectar()
 {
-	$dbhost = "127.0.0.1"; // El host
+	$dbhost = "root@localhost"; // El host
 	$dbuser = "root"; // El usuario
 	$dbpass = "m0n1ca"; // El Pass
 	$db = "alfonsoe_vnovainternet"; // Nombre de la base
