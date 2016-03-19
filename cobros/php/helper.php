@@ -260,17 +260,21 @@ function getCobroPlaninternet($contract,$comand,$connect)
 	//`id_contratoInternet` ,`id_cliente` ,`id_planesInternet` ,`date_fechaInicio` ,`date_fechaFinPeriodo` ,`int_periodo` ,`text_observaciones`
 	if($comand =="all")
 	{
-		$sql="SELECT`CobrosPlanesinternet`.*, `ClientePlanesinternet`.`id_planInternet`FROM`CobrosPlanesinternet` ,`ClientePlanesinternet` WHERE`CobrosPlanesinternet`.`id_contratoInternet`=$contract AND`CobrosPlanesinternet`.`id_contratoInternet`=`ClientePlanesinternet`.`id_contratoInternet` ORDER BY `CobrosPlanesinternet`.`date_FechaFinPeriodo`ASC";
+		
+		$sql="SELECT`CobrosPlanesinternet`.*, `ClientePlanesinternet`.`id_planInternet`FROM`CobrosPlanesinternet` ,`ClientePlanesinternet`  WHERE`CobrosPlanesinternet`.`id_contratoInternet`= $contract  AND ( `ClientePlanesinternet`.`id_planInternet`<>2 AND  `ClientePlanesinternet`.`id_planInternet`<>7) AND`CobrosPlanesinternet`.`id_contratoInternet`=`ClientePlanesinternet`.`id_contratoInternet`ORDER BY `CobrosPlanesinternet`.`date_FechaFinPeriodo`ASC";
+		/*$sql="SELECT`CobrosPlanesinternet`.*, `ClientePlanesinternet`.`id_planInternet`FROM`CobrosPlanesinternet` ,`ClientePlanesinternet` WHERE`CobrosPlanesinternet`.`id_contratoInternet`=$contract AND`CobrosPlanesinternet`.`id_contratoInternet`=`ClientePlanesinternet`.`id_contratoInternet` ORDER BY `CobrosPlanesinternet`.`date_FechaFinPeriodo`ASC";*/
 
 	}
 	else if($comand =="pendienteypagado")
 	{
-		$sql="SELECT`CobrosPlanesinternet`.*, `ClientePlanesinternet`.`id_planInternet`FROM`CobrosPlanesinternet` ,`ClientePlanesinternet` WHERE`CobrosPlanesinternet`.`id_contratoInternet`= $contract AND`CobrosPlanesinternet`.`id_contratoInternet`=`ClientePlanesinternet`.`id_contratoInternet`AND (`CobrosPlanesinternet`.`text_status` = 'pagado' OR `CobrosPlanesinternet`.`text_status` = 'pendiente' )ORDER BY `CobrosPlanesinternet`.`date_FechaFinPeriodo`ASC";
+		$sql="SELECT`CobrosPlanesinternet`.*, `ClientePlanesinternet`.`id_planInternet`FROM`CobrosPlanesinternet` ,`ClientePlanesinternet`  WHERE`CobrosPlanesinternet`.`id_contratoInternet`= $contract  AND ( `ClientePlanesinternet`.`id_planInternet`<>2 AND  `ClientePlanesinternet`.`id_planInternet`<>7) AND`CobrosPlanesinternet`.`id_contratoInternet`=`ClientePlanesinternet`.`id_contratoInternet`AND (`CobrosPlanesinternet`.`text_status` = 'pagado' OR `CobrosPlanesinternet`.`text_status` = 'pendiente' )ORDER BY `CobrosPlanesinternet`.`date_FechaFinPeriodo`ASC";
+		/*$sql="SELECT`CobrosPlanesinternet`.*, `ClientePlanesinternet`.`id_planInternet`FROM`CobrosPlanesinternet` ,`ClientePlanesinternet` WHERE`CobrosPlanesinternet`.`id_contratoInternet`= $contract AND`CobrosPlanesinternet`.`id_contratoInternet`=`ClientePlanesinternet`.`id_contratoInternet`AND (`CobrosPlanesinternet`.`text_status` = 'pagado' OR `CobrosPlanesinternet`.`text_status` = 'pendiente' )ORDER BY `CobrosPlanesinternet`.`date_FechaFinPeriodo`ASC";*/
 
 	}
 	else if($comand =="pendiente")
 	{
-		$sql="SELECT`CobrosPlanesinternet`.*, `ClientePlanesinternet`.`id_planInternet`FROM`CobrosPlanesinternet` ,`ClientePlanesinternet` WHERE`CobrosPlanesinternet`.`id_contratoInternet`=$contract AND`CobrosPlanesinternet`.`id_contratoInternet`=`ClientePlanesinternet`.`id_contratoInternet`AND `CobrosPlanesinternet`.`text_status` = 'pendiente'ORDER BY `CobrosPlanesinternet`.`date_FechaFinPeriodo`ASC";
+		$sql="SELECT`CobrosPlanesinternet`.*, `ClientePlanesinternet`.`id_planInternet`FROM`CobrosPlanesinternet` ,`ClientePlanesinternet`  WHERE`CobrosPlanesinternet`.`id_contratoInternet`= $contract  AND ( `ClientePlanesinternet`.`id_planInternet`<>2 AND  `ClientePlanesinternet`.`id_planInternet`<>7) AND`CobrosPlanesinternet`.`id_contratoInternet`=`ClientePlanesinternet`.`id_contratoInternet`AND `CobrosPlanesinternet`.`text_status` = 'pendiente'ORDER BY `CobrosPlanesinternet`.`date_FechaFinPeriodo`ASC";
+		/*$sql="SELECT`CobrosPlanesinternet`.*, `ClientePlanesinternet`.`id_planInternet`FROM`CobrosPlanesinternet` ,`ClientePlanesinternet` WHERE`CobrosPlanesinternet`.`id_contratoInternet`=$contract AND`CobrosPlanesinternet`.`id_contratoInternet`=`ClientePlanesinternet`.`id_contratoInternet`AND `CobrosPlanesinternet`.`text_status` = 'pendiente'ORDER BY `CobrosPlanesinternet`.`date_FechaFinPeriodo`ASC";*/
 
 	}
 
