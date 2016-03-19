@@ -169,10 +169,10 @@ function tableAdeudosAcumulados($connect,$isConected)
 			if($plan==2 || $plan==7)
 			{
 				//por ser Wi Fi se hace un ajuste de fecha
-				$fechaWifi = $fechaCorte;
+				/*$fechaWifi = $fechaCorte;*/
 				//$fechaWifi->modify("-1 month");
 				//En caso de ser wifi se mostraran despues
-				$contentCobrosWifi = $contentCobrosWifi.'
+				/*$contentCobrosWifi = $contentCobrosWifi.'
 						<h3 class="group">
 						<ul>
 							<li>'.$cliente.'</li>
@@ -183,7 +183,7 @@ function tableAdeudosAcumulados($connect,$isConected)
 						</h3>
 						<div>'.
 							tableDataByContrato($contrato,$comand,$connect,$isConected).'
-						</div>';
+						</div>';*/
 			}
 			else
 			{
