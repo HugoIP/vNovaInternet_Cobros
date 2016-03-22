@@ -327,7 +327,7 @@ function tableDataServiceByClient($cliente,$comand,$connect,$isConected)
 	<script src="../js/jquery-1.7.1.js" type="text/javascript"></script>
 	<script src="../js/prefixfree.min.js"  type="text/javascript"></script>
 	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
-	<script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
 
 
 	<link rel="stylesheet" type="text/css" href="../styles/estilos.css" media="screen">
