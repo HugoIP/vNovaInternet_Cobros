@@ -19,7 +19,7 @@ FROM`ClientePlanesinternet` WHERE `ClientePlanesinternet`.`text_status`='activo'
 			/*PENDIENTES*/
 			//Obtener total de dias sin servicio
 			//Obtener total de dias faltantes para este contrato
-			if($row["id_planInternet"] == 2 || $row["id_planInternet"] == 7 || $row["id_planInternet"] == 12 || $row["id_planInternet"] == 13)
+			if($row["id_planInternet"] == 2 || $row["id_planInternet"] == 7 || $row["id_planInternet"] == 9 || $row["id_planInternet"] == 12 || $row["id_planInternet"] == 13)
 			{
 				//wifi
 				//Cobros wi-fi
@@ -43,7 +43,7 @@ MONTH),`ClientePlanesinternet`.`date_fechaInicioPeriodo`,'pendiente'
 			{
 				$sql ="";
 
-				if($row["id_planInternet"] == 2 || $row["id_planInternet"] == 7 || $row["id_planInternet"] == 12 || $row["id_planInternet"] == 13)
+				if($row["id_planInternet"] == 2 || $row["id_planInternet"] == 7 || $row["id_planInternet"] == 9 || $row["id_planInternet"] == 12 || $row["id_planInternet"] == 13)
 				{
 					////wifi
 					//Actualizamos el saldo total del cliente
