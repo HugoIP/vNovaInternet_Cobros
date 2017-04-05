@@ -200,10 +200,10 @@ function date_diff_r($date1, $date2) {
 				<div class="notice-txt" id="linkUrl">vnova.santacatarinavillanueva.com</div>
 			</div>
 			<div id="printBannerBn">
-				<img src="../tienda/ads/anuncio_Bn.png" height="480" alt="Anuncios 2013" />
+				<img src="../imagenes/anuncioRe.jpg" height="200" alt="Anuncios 2017" />
 			</div>
 			<div id="printBannerCo">
-				<img src="../tienda/ads/anuncio_Co.png" height="480" alt="Anuncios 2013" />
+				<img src="../imagenes/anuncioRe.jpg" height="200" alt="Anuncios 2017" />
 			</div>
 			
 		</div>
