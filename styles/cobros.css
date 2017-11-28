@@ -360,3 +360,12 @@ li{
 .filaAdeudo{
 	border-bottom: 0.5px solid #333;
 }
+.datePay {
+	color: #888888;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+.timePay {
+	color: #888888;
+	font-size: 1em;
+}
