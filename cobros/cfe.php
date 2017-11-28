@@ -99,8 +99,8 @@ if($_POST["logIn"] != ""){
 					$timePayVar=date_format(new DateTime(),'H:i:s');
 					echo('
 				<div id="Sello">
-	                <div class="circlePay"><img src=".../imagenes/circlePay.png" alt="Pagado" widh=595 height=842></div>
-	                <div class="logoPay"><img src=".../imagenes/LogoPay.png" alt="Logo" widh=595 height=842></div>
+	                <img src=".../imagenes/CirclePay.png" alt="Pagado" widh=595 height=842>
+	               <img src=".../imagenes/LogoPay.png" alt="Logo" widh=595 height=842>
 	                <div class="datePay"><p>'.$datePayVar.'</p></div>
 	                <div class="timePay"><p>'.$timePayVar.'</p></div>
 	            </div>');
