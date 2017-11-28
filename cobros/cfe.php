@@ -29,7 +29,7 @@ if($_POST["logIn"] != ""){
 
 	<link rel="stylesheet" type="text/css" href="../styles/estilos.css" media="screen">
 	<link rel="stylesheet" type="text/css" href="../styles/cobros.css" media="screen">
-	<link rel="stylesheet" type="text/css" href="../styles/sello.css" media="print">
+	<link rel="stylesheet" type="text/css" href="../styles/sello.css" media="screen">
 	<link rel="stylesheet" type="text/css" href="../styles/clientsPrint.css" media="print">
 	<script type="text/javascript">
     $(document).ready(function() 
