@@ -1,0 +1,29 @@
+.contentPay{
+	position: relative;
+}
+.datePay {
+	color: #888888;
+	position: absolute;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+.timePay {
+	color: #888888;
+	position: absolute;
+	font-size: 1em;
+}
+.logoPay{
+	position: absolute;
+	background: url(../imagenes/LogoPay.gif) center no-repeat;
+	width: 500px;
+	height: 500px;
+
+}
+.circlePay{
+	display: inline-block;
+	position: absolute;
+	background: url(../imagenes/CirclePay.gif) center no-repeat;
+	top: 28px;
+	width: 500px;
+	height: 500px;
+}

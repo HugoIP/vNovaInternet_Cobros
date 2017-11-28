@@ -29,6 +29,7 @@ if($_POST["logIn"] != ""){
 
 	<link rel="stylesheet" type="text/css" href="../styles/estilos.css" media="screen">
 	<link rel="stylesheet" type="text/css" href="../styles/cobros.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="../styles/sello.css" media="print">
 	<link rel="stylesheet" type="text/css" href="../styles/clientsPrint.css" media="print">
 	<script type="text/javascript">
     $(document).ready(function() 
@@ -98,10 +99,10 @@ if($_POST["logIn"] != ""){
 					$datePayVar=date_format(new DateTime(),'d / m / Y');
 					$timePayVar=date_format(new DateTime(),'H:i:s');
 					echo('
-				<div id="Sello">
-	                <img src=".../imagenes/CirclePay.png" alt="Pagado" widh=595 height=842>
-	               <img src=".../imagenes/LogoPay.png" alt="Logo" widh=595 height=842>
-	                <div class="datePay"><p>'.$datePayVar.'</p></div>
+				<div class="contentPay">
+					<div class="circlePay"></div>
+					<div class="logoPay"></div>
+					<div class="datePay"><p>'.$datePayVar.'</p></div>
 	                <div class="timePay"><p>'.$timePayVar.'</p></div>
 	            </div>');
 
