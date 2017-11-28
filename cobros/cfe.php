@@ -409,7 +409,7 @@ function tableDataServiceByClient($cliente,$comand,$connect,$isConected)
 			<?php
 				if($logged == true)
 				{
-					$datePayVar=date_format(new DateTime(),'d-m-Y')
+					$datePayVar=date_format(new DateTime(),'d-m-Y');
 					echo('
 				<div id="Sello">
 	                <div class="circlePay"></div>
