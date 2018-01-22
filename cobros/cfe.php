@@ -98,15 +98,16 @@ if($_POST["logIn"] != ""){
 				{
 					$datePayVar=date_format(new DateTime(),'d / m / Y');
 					$timePayVar=date_format(new DateTime(),'H:i:s');
+					echo('<div class="sello">');
 					echo('
 				<div class="contentPay">
 					<div class="circlePay"></div>
 					<div class="logoPay"></div>
-					<div class="datePay"><p>'.$datePayVar.'</p></div>
-	                <div class="timePay"><p>'.$timePayVar.'</p></div>
+					<div class="datePay"><p>Fecha:'.$datePayVar.'</p></div>
+	                <div class="timePay"><p>Hora: '.$timePayVar.'</p></div>
 	            </div>');
 
-
+					echo('</div>');
 						
 				}
 				else

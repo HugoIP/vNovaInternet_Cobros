@@ -1,16 +1,19 @@
 .contentPay{
+	position: absolute;
+}
+.contentPay{
 	position: relative;
 }
 .datePay {
 	color: #888888;
 	position: absolute;
-	font-size: 1.5em;
+	font-size: 0.5em;
 	font-weight: bold;
 }
 .timePay {
 	color: #888888;
 	position: absolute;
-	font-size: 1em;
+	font-size: 0.3em;
 }
 .logoPay{
 	position: absolute;
