@@ -105,7 +105,7 @@ if($_POST["logIn"] != ""){
 					<div class="circlePay"></div>
 					<div class="logoPay"></div>
 					<div class="datePay"><p>Fecha:'.$datePayVar.'</p></div>
-	                <div class="timePay"><p>Hora:__'.$timePayVar.'</p></div>
+	                <div class="timePay">'.$timePayVar.'</div>
 	            </div>');
 
 					echo('</div>');
