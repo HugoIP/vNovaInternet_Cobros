@@ -107,6 +107,9 @@ if($_POST["logIn"] != ""){
 					<div class="logoPay"></div>
 					<div class="datePay"><p>Fecha:'.$datePayVar.'</p></div>
 	                <div class="timePay">'.$timePayVar.'</div>
+	                <div class="dataPayDom">Calle del Jardin #4</div>
+	                <div class="dataPayLoc">Santa Catarina Villanueva</div>
+	                <div class="dataPaySta">Quecholac, Puebla.</div>
 	            </div>');
 
 					echo('</div>');
