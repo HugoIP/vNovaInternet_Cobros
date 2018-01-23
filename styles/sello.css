@@ -7,13 +7,18 @@
 .datePay {
 	color: #888888;
 	position: absolute;
-	font-size: 0.5em;
+	font-size: 0.8em;
 	font-weight: bold;
+	top: 270px;
+	left: 200px;
 }
 .timePay {
 	color: #888888;
 	position: absolute;
-	font-size: 0.3em;
+	font-size: 0.6em;
+	font-weight: bold;
+	top: 290px;
+	left: 220px;
 }
 .logoPay{
 	position: absolute;
