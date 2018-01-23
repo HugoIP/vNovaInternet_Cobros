@@ -27,7 +27,7 @@
 }
 .dataPayDom {
 	color:black;
-	position: relative;
+	position: absolute;
 	font-size: 0.8em;
 	width: 500px;
 	font-weight: bold;
@@ -36,7 +36,7 @@
 }
 .dataPayLoc{
 	color:black;
-	position: relative;
+	position: absolute;
 	font-size: 0.8em;
 	width: 500px;
 	font-weight: bold;
@@ -45,7 +45,7 @@
 }
 .dataPaySta{
 	color:black;
-	position: relative;
+	position: absolute;
 	font-size: 0.8em;
 	width: 500px;
 	font-weight: bold;

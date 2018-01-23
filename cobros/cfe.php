@@ -101,7 +101,7 @@ if($_POST["logIn"] != ""){
 					$timePayVar=date_format(new DateTime(),'H:i:s');
 
 					echo('<div class="sello">');
-					echo('
+					/*echo('
 				<div class="contentPay">
 					<div class="circlePay"></div>
 					<div class="logoPay"></div>
@@ -111,7 +111,7 @@ if($_POST["logIn"] != ""){
 	                <div class="dataPayLoc">Santa Catarina Villanueva</div>
 	                <div class="dataPaySta">Quecholac, Puebla</div>
 
-	            </div>');
+	            </div>');*/
 
 					echo('</div>');
 						
