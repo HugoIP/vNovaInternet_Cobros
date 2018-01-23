@@ -100,7 +100,7 @@ if($_POST["logIn"] != ""){
 					$datePayVar=date_format(new DateTime(),'d / m / Y');
 					$timePayVar=date_format(new DateTime(),'H:i:s');
 
-					echo('<div class="sello">');
+					echo('<div class="selo">');
 					echo('
 				<div class="contentPay">
 					<div class="circlePay"></div>
