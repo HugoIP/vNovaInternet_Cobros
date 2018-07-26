@@ -30,7 +30,7 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/manage_usability.js"  type="text/javascript"></script>
@@ -41,23 +41,6 @@
               document.getElementById("Serv").focus();            
           
     });
-    function checkHistory(servicio){
-                  $.ajax({
-                      type: "POST",
-                      url: "php/checkHistory.php",
-                       data: "id="+servicio,
-                      success: function(datos){
-                           //alert( "Se guardaron los datos: " + "\n" + datos);
-                           //datos.servicio
-                           //datos.nombre
-                           //
-                           if(datos.servico!="")
-                           {
-                            document.getElementById("Nomb").value=datos.nombre;
-                           }
-                      }
-                  });
-     }
     </script>
   </body>
 
