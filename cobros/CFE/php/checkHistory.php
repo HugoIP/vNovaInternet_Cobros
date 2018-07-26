@@ -13,20 +13,28 @@ if($method == "OPTIONS") {
 }
 if(isset($servicio))
 {
-		//sen json
-	$datos = array(
-	'servicio' => $servicio,
-	'nombre' => "Hugo"
-	);
+	if (!empty($servicio)) {
+		//send json
+        $datos = array(
+		'servicio' => $servicio,
+		'nombre' => "Hugo"
+		);
+    }
+    else
+	{
+		$datos = array(
+		'servicio' => ""
+		);
+
+	}
 }
 else
 {
 	$datos = array(
-	'servicio' => ""
+		'servicio' => ""
 	);
 
 }
-
 //Devolvemos el array pasado a JSON como objeto
 echo json_encode($datos, JSON_FORCE_OBJECT);
 
