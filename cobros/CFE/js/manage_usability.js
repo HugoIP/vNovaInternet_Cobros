@@ -81,7 +81,7 @@
 	                $.ajax({
 	                    type: "POST",
 	                    url: "http://192.168.6.114/cobros/CFE/php/checkHistory.php",
-	                     data: "id="+servicio,
+	                     data: "servicio="+servicio,
 	                    success: function(datos){
 	                         //alert( "Se guardaron los datos: " + "\n" + datos);
 	                         //datos.servicio
@@ -90,6 +90,9 @@
 	                         if(datos.servico!="")
 	                         {
 	                         	document.getElementById("Nomb").value=datos.nombre;
+	                         }
+	                         else{
+	                         	document.getElementById("Nomb").value="";
 	                         }
 	                    }
 	                });
