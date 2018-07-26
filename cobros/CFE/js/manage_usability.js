@@ -78,6 +78,7 @@
 				}
 		}
 		function checkHistory(servicio){
+			alert("send   "+servicio);
 	                $.ajax({
 	                    type: "POST",
 	                    url: "http://192.168.6.114/cobros/CFE/php/checkHistory.php",
