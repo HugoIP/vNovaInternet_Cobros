@@ -1,6 +1,6 @@
 <?php 
 //get data
-$servicio = $_POST['servicio'];
+$servicio = json_decode($_POST['servicio']);
 //set header
 header('Content-Type: application/json');
 header('Access-Control-Allow-Origin: *');

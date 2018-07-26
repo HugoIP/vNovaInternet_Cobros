@@ -44,7 +44,7 @@
 	        }
 	        return false;
 	    }
-		    function saltar(e,id)
+		function saltar(e,id)
 		{
 			// Obtenemos la tecla pulsada
 			(e.keyCode)?k=e.keyCode:k=e.which;
@@ -62,9 +62,12 @@
 				if(id=="Pay")
 				{
 					document.forms[0].submit();
-					alert("submit");
 				}
 			}
+		}
+		function setFocus(id)
+		{
+			document.getElementById(id).focus();
 		}
 		function CheckEmptyVar(id) {
 			var obj=document.getElementById(id);
@@ -78,7 +81,6 @@
 				}
 		}
 		function checkHistory(servicio){
-			alert("send   "+servicio);
 	                $.ajax({
 	                    type: "POST",
 	                    url: "http://192.168.6.114/cobros/CFE/php/checkHistory.php",
@@ -87,8 +89,8 @@
 	                         //alert( "Se guardaron los datos: " + "\n" + datos);
 	                         //datos.servicio
 	                         //datos.nombre
-	                         alert(datos.servicio +" : " + datos.nombre);
-	                         if (typeof datos !== 'undefined' && datos.length > 0) 
+	                         console.log(JSON.stringify(datos));
+	                         if (datos.servicio !== 'undefined' && datos.length > 0) 
 	                         {
 	                         	document.getElementById("Nomb").value=datos.nombre;
 	                         }
