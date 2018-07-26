@@ -11,7 +11,7 @@ $method = $_SERVER['REQUEST_METHOD'];
 if($method == "OPTIONS") {
 	die();
 }
-if($servicio!="")
+if(isset($servicio))
 {
 		//sen json
 	$datos = array(
