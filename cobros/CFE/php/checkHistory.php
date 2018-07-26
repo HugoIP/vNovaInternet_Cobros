@@ -22,6 +22,7 @@ if($servicio!="")
 else
 {
 	$datos = array(
+	'servicio' => ""
 	);
 
 }
