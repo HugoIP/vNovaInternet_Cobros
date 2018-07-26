@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Recibo Demo</title>
+	<script src="../js/jquery-1.7.1.js" type="text/javascript"></script>
+	<script src="../js/prefixfree.min.js"  type="text/javascript"></script>
+
+	<script type="text/javascript">
+		function sumar()
+	    {
+	        var valor1=verificar("Mont");
+	        var valor2=verificar("Comi");
+	        // realizamos la suma de los valores y los ponemos en la casilla del
+	        // formulario que contiene el total
+	        document.getElementById("Cobr").value=parseFloat(valor1)+parseFloat(valor2);
+	    }
+		function verificar(id)
+	    {
+	        var obj=document.getElementById(id);
+	        if(obj.value=="")
+	            value="0";
+	        else
+	            value=obj.value;
+	         if(validate_importe(value,1))
+	        {
+	            // marcamos como correcto
+	            obj.style.borderColor="#808080";
+	            return value;
+	        }else{
+	            // marcamos como erroneo
+	            obj.style.borderColor="#f00";
+	            return 0;
+	        }
+	    }
+	    function validate_importe(value,decimal)
+	    {
+	        if(decimal==undefined)
+	            decimal=0;
+	 
+	        if(decimal==1)
+	        {
+	            // Permite decimales tanto por . como por ,
+	            var patron=new RegExp("^[0-9]+((,|\.)[0-9]{1,2})?$");
+	        }else{
+	            // Numero entero normal
+	            var patron=new RegExp("^([0-9])*$")
+	        }
+	 
+	        if(value && value.search(patron)==0)
+	        {
+	            return true;
+	        }
+	        return false;
+	    }
+		    function saltar(e,id)
+		{
+			// Obtenemos la tecla pulsada
+			(e.keyCode)?k=e.keyCode:k=e.which;
+		 	sumar();
+		 	CheckEmptyVar("Serv");
+			// Si la tecla pulsada es enter (codigo ascii 13)
+			if(k==13)
+			{
+				document.getElementById(id).focus();
+				// Si la variable id contiene "submit" enviamos el formulario
+				/*if(id=="logIn")
+				{
+					document.forms[0].submit();
+				}else{
+					// nos posicionamos en el siguiente input
+					document.getElementById(id).focus();
+				}*/
+			}
+		}
+		function CheckEmptyVar(id) {
+			var obj=document.getElementById(id);
+				if(obj.value=="")
+				{
+					obj.style.borderColor="#f00";
+				}
+				else
+				{
+					obj.style.borderColor="#808080";
+				}
+		}
+	    $(document).ready(function() 
+	    {
+	            //registrar();
+	            document.getElementById("Serv").focus();
+	            function registrar(){
+	                $.ajax({
+	                    type: "POST",
+	                    url: "../php/DairyCheckDB.php",
+	                     data: "id="+"1",
+	                    success: function(datos){
+	                         //alert( "Se guardaron los datos: " + "\n" + datos);
+	                    }
+	                });
+	            }
+					
+		});
+    </script>
+</head>
+<body>
+<section>
+<form id="CaptureCFE" action="" method="post">
+	<div>Numero de servicio </div>
+	<input type="text" id="Serv"  name="Servicio" size="50" onkeyup="saltar(event,'Nomb');">
+	<div>Nombre </div>
+	<input type="text" id="Nomb" name="Nombre" size="50" onkeyup="saltar(event,'Mont');">
+	<div>Monto </div>
+	<input type="text" id="Mont" name="Monto" size="6" placeholder="0.00" onkeyup="saltar(event,'Comi');">
+	<div>Comision </div>
+	<input type="text" id="Comi" name="Comision" size="6" value="10" placeholder="10.00" onkeyup="saltar(event,'Cobr');">
+	<div>Total </div>
+	<input type="text" id="Cobr" name="Cobro" size="6" placeholder="10.00" onkeyup="saltar(event,'pay');">
+	<input name="Cobrar" id="pay"  value="Cobrar" />
+</form>
+	
+		
+</section>
+
+</body>
+</html>
