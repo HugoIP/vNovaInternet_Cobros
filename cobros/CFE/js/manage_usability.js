@@ -53,13 +53,10 @@
 			// Si la tecla pulsada es enter (codigo ascii 13)
 			if(k==13)
 			{
-				alert("id:::::::"+id);
 				// Si la variable id contiene "submit" enviamos el formulario
 				if(id=="Nomb")
 				{
-					alert("id::::::    :"+id);
 					checkHistory(document.getElementById("Serv").value);
-					alert("Sed find");
 				}
 				document.getElementById(id).focus();
 				if(id=="Pay")
@@ -81,7 +78,6 @@
 				}
 		}
 		function checkHistory(servicio){
-			alert(servicio);
 	                $.ajax({
 	                    type: "POST",
 	                    url: "http://192.168.6.114/cobros/CFE/php/checkHistory.php",
