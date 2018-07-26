@@ -81,9 +81,10 @@
 				}
 		}
 		function checkHistory(servicio){
+			alert(servicio);
 	                $.ajax({
 	                    type: "POST",
-	                    url: "php/checkHistory.php",
+	                    url: "http://192.168.6.114/cobros/CFE/php/checkHistory.php",
 	                     data: "id="+servicio,
 	                    success: function(datos){
 	                         //alert( "Se guardaron los datos: " + "\n" + datos);

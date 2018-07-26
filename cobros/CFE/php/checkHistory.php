@@ -6,6 +6,7 @@ header('Content-Type: application/json');
 
 //sen json
 $datos = array(
+'servicio' => "Hugo",
 'nombre' => "Hugo"
 );
 //Devolvemos el array pasado a JSON como objeto
