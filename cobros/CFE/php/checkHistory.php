@@ -11,9 +11,9 @@ $method = $_SERVER['REQUEST_METHOD'];
 if($method == "OPTIONS") {
 	die();
 }
-if(!empty($servicio))
+if(isset($servicio))
 {
-	if (!isset($servicio)) {
+	if (!empty($servicio)) {
 		//send json
         $datos = array(
 		'servicio' => $servicio,
@@ -23,7 +23,6 @@ if(!empty($servicio))
     else
 	{
 		$datos = array(
-		'servicio' => ""
 		);
 
 	}
@@ -31,7 +30,6 @@ if(!empty($servicio))
 else
 {
 	$datos = array(
-		'servicio' => ""
 	);
 
 }

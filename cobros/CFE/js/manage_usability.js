@@ -87,8 +87,8 @@
 	                         //alert( "Se guardaron los datos: " + "\n" + datos);
 	                         //datos.servicio
 	                         //datos.nombre
-	                         alert(datos.servico);
-	                         if(datos.servico!="")
+	                         alert(datos.servicio +" : " + datos.nombre);
+	                         if (typeof datos !== 'undefined' && datos.length > 0) 
 	                         {
 	                         	document.getElementById("Nomb").value=datos.nombre;
 	                         }
