@@ -22,14 +22,14 @@ if(isset($servicio))
     }
     else
 	{
-		$datos = array(
+		$datos = array('h':12
 		);
 
 	}
 }
 else
 {
-	$datos = array(
+	$datos = array('m':15
 	);
 
 }

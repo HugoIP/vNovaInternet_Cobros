@@ -89,8 +89,13 @@
 	                         //alert( "Se guardaron los datos: " + "\n" + datos);
 	                         //datos.servicio
 	                         //datos.nombre
-	                         console.log(JSON.stringify(datos));
-	                         if (datos.servicio !== 'undefined' && datos.length > 0) 
+	                         console.log(datos);
+	                         var json_obj = $.parseJSON(datos);//parse JSON
+	                         console.log(json_obj);
+	                         alert(typeof datos.servicio);
+	                         alert(typeof datos.servicio !== 'undefined');
+	                         alert(datos.length);
+	                         if (typeof datos.servicio !== 'undefined' && datos.length > 0) 
 	                         {
 	                         	document.getElementById("Nomb").value=datos.nombre;
 	                         }
