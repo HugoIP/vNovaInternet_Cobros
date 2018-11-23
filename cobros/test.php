@@ -1,10 +1,3 @@
-<?php
-//include 'php/sessionManager.php';
-
-include('../php/conectorBD.php');
-include('../php/DairyCheckDB.php');
-include('php/helper.php'); 	
-?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -73,7 +66,7 @@ include('php/helper.php');
 	        <div id="helements">
 				<a href="../" title="Inicio"><div id="logo"></div></a>
 				<?php
-
+					echo "tesy";
 				?>
 			</div>
 		</div>
