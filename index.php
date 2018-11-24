@@ -98,6 +98,7 @@ include('helper.php');
 $connect = connect();
 
 $clientList = getClientes($connect,"activo");
+
  if($clientList)
   {
     //listamos todos los clientes
@@ -170,7 +171,7 @@ $clientList = getClientes($connect,"activo");
         $contentServicios
       .'
       </div>';
-
+echo ($tableData):
 
 //$isConected = array('isLogIn' => true, 'userName'  => 'HugoIP', 'idUser' => -1, 'message' => "",'priv' => 3);
 //$tableData = tableAdeudosClientes($connect,$isConected);
