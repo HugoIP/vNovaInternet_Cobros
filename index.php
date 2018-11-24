@@ -126,9 +126,7 @@ while($misdatos = mysqli_fetch_assoc($result)){ $contador++;?>
   <td><?php echo $misdatos["float_monto"]; ?></td>
   <td><?php echo $misdatos["id_cobroPlaninternet"]; ?></td>
   </tr>
-
-
-?>          
+        
 
 </tbody>
       </table>		
