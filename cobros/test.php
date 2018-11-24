@@ -35,10 +35,6 @@
 			//$("#encabezado").show("slow");
 			//$("#cuerpo").show("slow");
 		});	
-		$( "#saldos" ).accordion({
-	    	heightStyle: "content"
-	    });	
-
 		
 	});
     </script>
