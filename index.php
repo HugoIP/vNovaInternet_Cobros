@@ -399,7 +399,6 @@ function tableDataServiceByClient($cliente,$comand,$connect,$isConected)
   }
   return $contentTable;
 }
-
 ?>          
 
 </tbody>
