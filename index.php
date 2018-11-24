@@ -127,7 +127,7 @@ while($misdatos = mysqli_fetch_assoc($result)){ $contador++;?>
   <td><?php echo $misdatos["id_cobroPlaninternet"]; ?></td>
   </tr>
         
-
+<?php }?>  
 </tbody>
       </table>		
 <!-- Fin Contenido --> 
