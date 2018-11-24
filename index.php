@@ -96,8 +96,85 @@ include "db.php";
 include('helper.php');  
 
 $connect = connect();
-$isConected = array('isLogIn' => true, 'userName'  => 'HugoIP', 'idUser' => -1, 'message' => "",'priv' => 3);
-$tableData = tableAdeudosClientes($connect,$isConected);
+
+$clientList = getClientes($connect,"activo");
+ if($clientList)
+  {
+    //listamos todos los clientes
+    while($clienteFila =  mysql_fetch_array($clientList))
+    {
+      $idCliente = $clienteFila['id_cliente'];
+      $nombreCliente = $clienteFila['text_nombre'];
+      $servicios=false;
+      $internet=false;
+      $saldo=0;
+      $hasAdeudo = hasAdeudo($connect,$idCliente) ;
+      $tableAdeudos="";
+      if( $hasAdeudo )
+      { 
+        $serviciosList=getSaldoServicios($connect,$idCliente);
+        while($saldoFila =  mysql_fetch_array($serviciosList))
+        {
+          $servicios=true;
+          $saldo = $saldo + $saldoFila['saldo'];
+        }
+        $tableAdeudos=$tableAdeudos.tableDataServiceByClient($idCliente,$comand,$connect,$isConected);
+      }
+      $hasContratosInternet = hasContratosInternet($connect,$idCliente);
+      $tableAdeudosInternet="";
+      if( $hasContratosInternet )
+      { 
+        while($contratoFila =  mysql_fetch_array($hasContratosInternet))
+        {
+            $internet=true;
+            $contrato=$contratoFila['id_contratoInternet'];
+            //obtenemos el saldo total de los recibos acumulados
+            $internetList=getSaldoInternet($connect,$contrato);
+            while($saldoFila =  mysql_fetch_array($internetList))
+            {
+              $internet=true;
+              $saldo = $saldo + $saldoFila['saldo'];
+            }
+            $tableAdeudosInternet=$tableAdeudosInternet.tableDataByContrato($contrato,$comand,$connect,$isConected);
+        }
+      }
+       if($tableAdeudos!="" || $tableAdeudosInternet!="" )
+      {
+        $contentServicios= $contentServicios.'
+        <h3 class="group">
+        <tr>
+          <td class="left">'.$nombreCliente.'</td>
+          <td> $ &nbsp;'.$saldo.'</td>
+          <td>'.'-- -- ----'.'</td>
+          <td>'.'Acciones'.'</td>
+        </tr>
+        </h3>
+        <div>
+          '.
+          $tableAdeudos.
+          $tableAdeudosInternet.
+        '</div>';
+
+        //$tableServicios=$tableServicios.tableDataServiceByClient($idCliente,$comand,$connect,$isConected);
+      }
+    }
+  }
+ $tableData='
+      <tr>
+        <td>Cliente</td>
+        <td>Cantidad</td>
+        <td>Fecha de corte</td>
+        <td>Opciones</td>
+      </tr>
+      <div id="saldos">'.
+        $contentServicios
+      .'
+      </div>';
+
+
+//$isConected = array('isLogIn' => true, 'userName'  => 'HugoIP', 'idUser' => -1, 'message' => "",'priv' => 3);
+//$tableData = tableAdeudosClientes($connect,$isConected);
+
 function tableAdeudosClientes($connect,$isConected)
 {
   $clientList = false;
