@@ -103,8 +103,7 @@ $connect = connect();
   $sql="SELECT * FROM CobrosPlanesinternet WHERE 0";
   //Table: CobrosPlanesinternet
   //`id_contratoInternet` ,`id_cliente` ,`id_planesInternet` ,`date_fechaInicio` ,`date_fechaFinPeriodo` ,`int_periodo` ,`text_observaciones`
-  if($comand =="all")
-  {
+
     //$sql="SELECT * FROM CobrosPlanesinternet WHERE `CobrosPlanesinternet`.`text_status` = 'pendiente'";
     $sql="SELECT`CobrosPlanesinternet`.* ,`clientes`.`text_nombre`, `ClientePlanesinternet`.`id_planInternet`
 FROM`CobrosPlanesinternet` ,`clientes` ,`ClientePlanesinternet` 
@@ -112,21 +111,22 @@ WHERE`clientes`.`id_cliente`=`ClientePlanesinternet`.`id_cliente`
 AND`CobrosPlanesinternet`.`id_contratoInternet`=`ClientePlanesinternet`.`id_contratoInternet`
 ORDER BY `CobrosPlanesinternet`.`date_FechaFinPeriodo`DESC";
 
-  }
 
 
   
   $result = mysqli_query($sql,$connect);
-  if ($result)
-  {
-    $response = $result;
-  }
-  else
-  {
-    $response = false;
-  }
-  
-echo($response);
+
+  $contador=0;
+
+while($misdatos = mysqli_fetch_assoc($result)){ $contador++;?>
+<tr>
+  <td><?php echo $misdatos["text_nombre"]; ?></td>
+  <td><?php echo $misdatos["id_planInternet"]; ?></td>
+  <td><?php echo $misdatos["text_status"]; ?></td>
+  <td><?php echo $misdatos["float_monto"]; ?></td>
+  <td><?php echo $misdatos["id_cobroPlaninternet"]; ?></td>
+  </tr>
+
 
 ?>          
 
